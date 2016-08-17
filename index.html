@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+	<script src="videoPlayer.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+<div id="videoContainer" class="center-content">
+ 	<video id="myVideo" controls width="760" height="380" autoplay>
+ 		<source src="testvid.mp4" type="video/mp4">
+ 	</video>
+	<div id="videoControls" class="controls">
+		
+		<div class="col span-12 center-content">
+			<input id="seekSlider" type="range" min="0" max="100" value="0" step="1">
+		</div>
+		
+		<div class="col span-12 center-content">
+			<div class="col span-6 left-controls">
+				<span id="curTimeText">0:00:00</span>
+			</div>
+			<div class="col span-6 right-controls">
+				<span id="remTimeText">-0:00:00</span>
+			</div>
+		</div> 
+
+
+		<div class="col span-12 center-controls">
+			<button id="closeCaptionBtn" class="iconfont">&#xEC15;</button>
+			<button id="aspRatioBtn" class="iconfont">&#xE799;</button>
+			<button id="playPauseBtn" class="iconfont">&#xE769;</button>
+			<button id="volumeBtn" class="iconfont">&#xE15D;</button>
+			<button id="fullscreenBtn" class="iconfont">&#xE1D9;</button>
+		</div>
+	</div>
+	<div id="volumeModal">
+		<button id="muteBtn" class="iconfont">&#xE15D;</button>
+		<input id="volumeSlider" class="iconfont" type="range" min="0" max="100" value="100" step="1">
+	</div>
+</div>
+</body>
+
+</html>
